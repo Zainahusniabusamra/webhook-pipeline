@@ -1,0 +1,38 @@
+{
+  "name": "webhook-pipeline",
+  "version": "1.0.0",
+  "description": "Webhook-Driven Task Processing Pipeline",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "worker": "tsx src/worker/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zainahusniabusamra/webhook-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Zainahusniabusamra/webhook-pipeline/issues"
+  },
+  "homepage": "https://github.com/Zainahusniabusamra/webhook-pipeline#readme",
+  "dependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.4.0",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "pg": "^8.20.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/pg": "^8.18.0",
+    "tsx": "^4.21.0"
+  }
+}
